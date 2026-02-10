@@ -9,8 +9,10 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data (raw or generated)
-data/
+# Data (track folder, ignore contents)
+data/*
+!data/.gitkeep
+
 *.csv
 *.parquet
 
