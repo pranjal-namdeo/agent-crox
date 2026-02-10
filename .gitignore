@@ -6,6 +6,11 @@ __pycache__/
 .venv/
 venv/
 
+# Secrets and Keys
+.env
+.env.local
+.python-version
+
 # Jupyter
 .ipynb_checkpoints/
 
