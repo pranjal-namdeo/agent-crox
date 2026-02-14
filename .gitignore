@@ -11,6 +11,11 @@ venv/
 .env.local
 .python-version
 
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
+
 # Jupyter
 .ipynb_checkpoints/
 
