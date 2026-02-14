@@ -41,7 +41,10 @@ from crewai import LLM
 local_llm = LLM(
     # model="ollama/llama3.2",
     model= "ollama/llama3.2:1b",
-    base_url="http://localhost:11434"
+    base_url="http://localhost:11434",
+    max_tokens=300,
+    temperature=0.2,
+    timeout=120
 )
 # Note: I have updated my agents also to make it compatible with local testing - you can see the changes in the research_agent.py file."
 
