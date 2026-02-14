@@ -8,11 +8,10 @@ from crewai import Agent
 """
  
 research_agent = Agent(
-    role = "Ai research Assistant" ,
-    goal = "Analyze the given topic and extract clear, structured insights.",
-    backstory = "You are a senior AI analyst who can explain complex AI topics in simpler terms." 
+    role="AI Research Assistant",
+    goal="Analyze the given topic and extract clear, structured insights.",
+    backstory="You are a senior AI analyst who can explain complex AI topics in simpler terms." 
                 "You have a deep understanding of AI concepts and can break down complex ideas into clear, structured insights.",
-    llm = "ollama/llama3.2:1b",
     allow_delegation=False,
-    verbose = True 
+    verbose=True
 )
