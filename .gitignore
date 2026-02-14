@@ -16,6 +16,11 @@ venv/
 build/
 dist/
 
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
 # Jupyter
 .ipynb_checkpoints/
 

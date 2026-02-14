@@ -6,10 +6,27 @@ build-backend = "setuptools.build_meta"
 name = "agent-crox"
 version = "0.1.0"
 description = "Agentic AI research crew project"
+requires-python = "==3.10.*"
+keywords = ["agents", "crewai", "ollama", "llm", "mlops"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 authors = [
     {name = "Pranjal Namdeo"}
 ]
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
